@@ -128,6 +128,20 @@ python -m unittest discover -s tests -t .
   time of the last clear and the renderer looks at its age. Pausing stops that
   clock too.
 
+## Releasing
+
+Publishing runs on GitHub Actions via PyPI Trusted Publishing — no API token
+is stored. Bump `version` in `pyproject.toml`, then:
+
+```
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+`.github/workflows/release.yml` runs the tests on Linux/macOS/Windows against
+Python 3.9 and 3.13, checks that the tag matches the packaged version, builds
+the sdist and wheel, and uploads them to PyPI.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
