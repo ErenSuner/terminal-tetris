@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tetris-tui"
+version = "1.0.0"
+description = "Modern guideline Tetris in your terminal - pure Python, zero dependencies"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Eren Suner", email = "erenn.suner@gmail.com" }]
+keywords = ["tetris", "terminal", "tui", "game", "ansi", "console"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Games/Entertainment :: Puzzle Games",
+]
+
+[project.urls]
+Homepage = "https://github.com/ErenSuner/terminal-tetris"
+Issues = "https://github.com/ErenSuner/terminal-tetris/issues"
+
+[project.scripts]
+terminal-tetris = "terminal_tetris.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["terminal_tetris"]
+
+[tool.hatch.build.targets.sdist]
+include = ["terminal_tetris", "tests", "tetris.py", "README.md", "LICENSE"]
