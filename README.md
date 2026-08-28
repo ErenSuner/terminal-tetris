@@ -1,5 +1,10 @@
 # Terminal Tetris
 
+[![PyPI](https://img.shields.io/pypi/v/tetris-tui)](https://pypi.org/project/tetris-tui/)
+[![Tests](https://github.com/ErenSuner/terminal-tetris/actions/workflows/ci.yml/badge.svg)](https://github.com/ErenSuner/terminal-tetris/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/pypi/pyversions/tetris-tui)](https://pypi.org/project/tetris-tui/)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 Modern guideline Tetris, played in your terminal. Pure Python 3 —
 **no pip packages required**.
 
@@ -114,6 +119,9 @@ the engine directly.
 ```
 python -m unittest discover -s tests -t .
 ```
+
+`.github/workflows/ci.yml` runs the same suite on Linux, macOS and Windows
+against Python 3.9 and 3.13 for every push and pull request.
 
 ## Notes
 
