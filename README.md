@@ -11,14 +11,17 @@ Modern guideline Tetris, played in your terminal. Pure Python 3 —
 ## Install
 
 ```
-pipx install tetris-tui        # or: pip install tetris-tui
-terminal-tetris
+pip install tetris-tui        # or: pipx install tetris-tui
 ```
 
 Straight from source, no PyPI needed:
 
 ```
 pipx install git+https://github.com/ErenSuner/terminal-tetris
+```
+
+## Run the game:
+```
 terminal-tetris
 ```
 
