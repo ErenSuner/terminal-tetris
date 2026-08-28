@@ -37,9 +37,7 @@ The installed command is `terminal-tetris`; `python -m terminal_tetris` works
 too. Windows, macOS and Linux terminals are all supported (Windows uses
 `msvcrt` plus a console-mode call for ANSI, POSIX uses `termios` + `select`).
 
-
-![Example Run]("C:\Users\erenn\OneDrive\Pictures\Screenshots\Ekran görüntüsü 2026-08-28 225038.png")
-
+![Example Run](resimler/normal.png)
 
 ## Controls
 
@@ -73,7 +71,8 @@ characters.
 
 But even if it can encode, I strongly recommenf to try `terminal-tetris --ascii`.
 
-![Ascii Run](""C:\Users\erenn\OneDrive\Pictures\Screenshots\Ekran görüntüsü 2026-08-28 225147.png"")
+![Ascii Run](resimler/ascii.png)
+
 
 
 ## Rules
